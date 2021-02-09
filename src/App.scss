@@ -1,0 +1,75 @@
+/* @import '../fonts/Milkshake 400.ttf'; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+$mainColor: #bada55;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	position: relative;
+}
+.nav-brand img {
+	width: 110px;
+	height: 50px;
+}
+.nav-item {
+	color: blue;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+	.nav-item {
+		text-transform: capitalize;
+	}
+}
+
+.toggle {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	background: none;
+	border: none;
+	outline: none;
+}
+.hidden {
+	display: none;
+}
+
+#nav-group {
+	display: none;
+}
+
+@media screen and (min-width: 800px) {
+	.toggle {
+		display: none;
+	}
+	nav {
+		display: flex;
+		align-items: center;
+		/* height: 70px; */
+		justify-content: space-between;
+	}
+	#nav-group {
+		display: grid !important;
+		border: none;
+		grid-template-columns: repeat(6, 120px);
+		justify-content: center;
+		text-align: center;
+	}
+
+	.hidden {
+		/* position: absolute;
+		top: 60px; */
+		background: #ececec;
+		padding: 1rem;
+	}
+}
+.sch-btn:hover,
+.signUp-btn:hover {
+	.MuiButton-endIcon {
+		transform: translateX(5px);
+		transition: all 0.2s ease-in-out;
+	}
+}
