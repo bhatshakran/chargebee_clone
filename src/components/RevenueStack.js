@@ -12,7 +12,7 @@ const RevenueStack = () => {
 	return (
 		<Wrapper>
 			<div className='inside'>
-				<Typography variant='h4' className='inside_item'>
+				<Typography variant='h2' className='inside_item'>
 					Works With Your Revenue Management Stack
 				</Typography>
 				<Typography variant='subtitle1' className='inside_item'>
@@ -70,14 +70,16 @@ const Wrapper = styled.section`
 	min-height: 800px;
 	width: 100%;
 	clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
+	overflow: hidden;
 	.inside {
-		width: 100%;
 		height: 800px;
 		background: #371b81;
 		clip-path: polygon(0% 10%, 100% 3%, 100% 100%, 0% 100%);
+		overflow: hidden;
 		display: flex;
 		flex-direction: column;
 		align-items: Center;
+		padding-top: 15rem;
 		justify-content: center;
 		color: #fff;
 	}
@@ -86,6 +88,7 @@ const Wrapper = styled.section`
 	}
 	.inside_item {
 		margin: 0 2rem;
+		max-width: 600px;
 	}
 	.article-grid {
 		background: #371b81;
