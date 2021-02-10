@@ -13,11 +13,8 @@ a {
 	text-decoration: none;
 }
 .navbar {
-	padding: 0 1rem;
-	display: flex;
-	align-items: center;
-	height: 90px;
-	justify-content: space-between;
+	padding: 0.5rem 1rem;
+	height: 70px;
 }
 .nav-brand img {
 	width: 110px;
@@ -53,7 +50,7 @@ a {
 
 .toggle {
 	position: absolute;
-	top: 1.5rem;
+	top: 1.2rem;
 	right: 1rem;
 	font-size: 1.5rem;
 	cursor: pointer;
@@ -79,7 +76,11 @@ a {
 	.toggle {
 		display: none;
 	}
-
+	.navbar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 	#nav-group {
 		top: 0;
 		background: none;
