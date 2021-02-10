@@ -5,6 +5,9 @@ import Highlights from './Highlights';
 // import Animation from './Animation';
 import RevenueStack from './RevenueStack';
 import TalkToUs from './TalkToUs';
+import Comments from './Comments';
+import StillUnsure from './StillUnsure';
+import Footer from './Footer';
 
 const Home = () => {
 	return (
@@ -15,6 +18,9 @@ const Home = () => {
 			{/* <Animation /> */}
 			<RevenueStack />
 			<TalkToUs />
+			<Comments />
+			<StillUnsure />
+			<Footer />
 		</>
 	);
 };
