@@ -35,11 +35,7 @@ const useStyles = makeStyles({
 		color: theme.palette.text.secondary,
 	},
 	navGrid: {
-		borderRadius: '5px',
-		marginRight: '0.3rem',
-		marginTop: '0.3rem',
-		padding: '1rem',
-		border: '1px solid black',
+		display: 'flex',
 	},
 });
 
@@ -55,28 +51,9 @@ const Navbar = () => {
 		}
 	}
 
-	function hoverHandler(e) {
-		const hidden = e.target.parentNode.nextSibling;
-
-		hidden.style.display = 'block';
-	}
-	function leaveHandler(e) {
-		const hidden = e.target.children[1];
-		const nextHidden = e;
-		console.log(e);
-		hidden.style.display = 'none';
-	}
-	// window.addEventListener('resize', () => {
-	// 	if (window.innerWidth <= '800') {
-	// 		const items = document.querySelectorAll('.nav-item');
-	// 		const itemsArray = Array.from(items);
-	// 		itemsArray.forEach(item => {
-
-	// 	}
-	// });
 	return (
 		<ThemeProvider theme={theme}>
-			<nav>
+			<nav className='navbar'>
 				<div className='nav-brand'>
 					<img src={logo} alt='' />
 				</div>
@@ -86,29 +63,29 @@ const Navbar = () => {
 				</button>
 				<div>
 					<div className={classes.navGrid} id='nav-group'>
-						<div className='nav-item' onMouseLeave={leaveHandler}>
+						<div className='nav-item'>
 							<Typography
 								variant='body1'
 								style={{ margin: '1rem 0', color: 'black' }}>
-								<a onMouseOver={hoverHandler}> Product</a>
+								<a> Product</a>
 							</Typography>
 							<div className='hidden'>
-								Subscription Management
-								<br />
-								Billing Automation
-								<br />
-								Recurring Payments
-								<br />
-								Accounting & Taxes
-								<br />
-								Reporting & Analytics
+								<a href=''> Subscription Management</a>
+
+								<a href=''> Billing Automation</a>
+
+								<a href=''> Recurring Payments</a>
+
+								<a href=''> Accounting & Taxes</a>
+
+								<a href=''> Reporting & Analytics</a>
 							</div>
 						</div>
-						<div className='nav-item' onMouseLeave={leaveHandler}>
+						<div className='nav-item'>
 							<Typography
 								variant='body1'
 								style={{ margin: '1rem 0', color: 'black' }}>
-								<a onMouseOver={hoverHandler}>Solutions</a>
+								<a>Solutions</a>
 							</Typography>
 							<div className='hidden'>
 								<Typography
@@ -116,51 +93,55 @@ const Navbar = () => {
 									style={{ margin: '1rem 0', color: 'black' }}>
 									BY ROLE
 								</Typography>
-								Finance
-								<br /> Sales
-								<br /> RevOps
+								<a href=''>Finance</a>
+
+								<a href=''> Sales</a>
+								<a href=''> RevOps</a>
 								<Typography
 									variant='body2'
 									style={{ margin: '1rem 0', color: 'black' }}>
 									BY INDUSTRY
 								</Typography>
-								B2B SaaS
-								<br /> Ecommerce
-								<br /> E-learning
-								<br /> Publishing
+								<a href=''> B2B SaaS</a>
+								<a href=''> Ecommerce</a>
+								<a href=''> E-learning </a>
+								<a href=''> Publishing</a>
 								<Typography
 									variant='body2'
 									style={{ margin: '1rem 0', color: 'black' }}>
 									BY STRATEGY
 								</Typography>
-								Roll Out New Pricing
-								<br />
-								Expand Globally
-								<br />
-								Move Upmarket
-								<br />
-								Shift to Subscriptions
+								<a href=''> Roll Out New Pricing </a>
+
+								<a href=''> Expand Globally</a>
+
+								<a href=''> Move Upmarket</a>
+
+								<a href=''> Shift to Subscriptions</a>
 								<Typography
 									variant='body2'
 									style={{ margin: '1rem 0', color: 'black' }}>
 									BY BUSINESS SIZE
 								</Typography>
-								Startup <br />
-								Scaleup <br />
-								Enterprise
+								<a href=''> Startup </a>
+
+								<a href=''> Scaleup </a>
+
+								<a href=''>Enterprise</a>
 								<Typography
 									variant='body2'
 									style={{ margin: '1rem 0', color: 'black' }}>
 									BY BUSINESS MODEL
 								</Typography>
-								Self-serve
-								<br /> Sales-driven
+								<a href=''> Self-serve</a>
+
+								<a href=''> Sales-driven</a>
 								<Typography
 									variant='body2'
 									style={{ margin: '1rem 0', color: 'black' }}>
 									BY GEOGRAPHY
 								</Typography>
-								Europe
+								<a href=''> Europe</a>
 							</div>
 						</div>
 						<div className='nav-item'>
