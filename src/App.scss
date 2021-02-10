@@ -66,8 +66,7 @@ $mainColor: #bada55;
 		padding: 1rem;
 	}
 }
-.sch-btn:hover,
-.signUp-btn:hover {
+.animated:hover {
 	.MuiButton-endIcon {
 		transform: translateX(5px);
 		transition: all 0.2s ease-in-out;

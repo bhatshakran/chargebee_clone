@@ -4,6 +4,7 @@ import SwipeShow from './SwipeShow';
 import Highlights from './Highlights';
 // import Animation from './Animation';
 import RevenueStack from './RevenueStack';
+import TalkToUs from './TalkToUs';
 
 const Home = () => {
 	return (
@@ -13,6 +14,7 @@ const Home = () => {
 			<Highlights />
 			{/* <Animation /> */}
 			<RevenueStack />
+			<TalkToUs />
 		</>
 	);
 };

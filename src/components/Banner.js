@@ -8,10 +8,10 @@ import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 export const theme = createMuiTheme({
 	palette: {
 		primary: {
-			main: '#0010f0',
+			main: '#5009d2',
 		},
 		secondary: {
-			main: 'rgb(0,0,0)',
+			main: 'rgb(255,255,255)',
 		},
 	},
 });
@@ -33,14 +33,14 @@ const Banner = () => {
 				<Button
 					variant='contained'
 					size='large'
-					className='sch-btn'
+					className='sch-btn animated'
 					endIcon={<ArrowForwardIcon />}>
 					Schedule a Demo
 				</Button>
 				<Button
 					variant='outlined'
 					size='large'
-					className='signUp-btn'
+					className='signUp-btn animated'
 					color='primary'
 					endIcon={<ArrowForwardIcon />}>
 					Sign up for free
